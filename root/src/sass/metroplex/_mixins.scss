@@ -1,0 +1,44 @@
+@mixin retina{
+	@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+		@content;
+	}
+}
+
+@mixin chromeonly{
+	@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+		@content;
+	}
+}
+
+@mixin placeholder{
+	::-webkit-input-placeholder { /* WebKit browsers */
+	   @content;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	    @content;
+	    opacity:  1;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   @content;
+	    opacity:  1;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+	    @content;
+	}
+}
+
+
+@function calculateRem($size) {
+	$remSize: $size / $font-size-base;
+	@return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+	font-size: $size;
+	font-size: calculateRem($size);
+}
+
+@mixin lineHeight($size) {
+	line-height: $size;
+	line-height: calculateRem($size);
+}
