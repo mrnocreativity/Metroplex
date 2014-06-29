@@ -1,4 +1,4 @@
-# Metrojump
+# Metroplex
 
 > Create a massively powerfull project skeleton in a few seconds using Grunt-init and Node. This is a particular powerful one as it comes preloaded with watchers for javascript changes and compilation, Compass watcher and compilation and a built-in webserver for quick testing. And then there's the FTP upload power. Yes it uploads files to your server too. It even has an FTP login UI. Bow for me, for I am awesome.
 
