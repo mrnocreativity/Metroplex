@@ -36,7 +36,7 @@
 To install the template into the grunt-init template folder, just run the following command.
 
 ```
- git clone https://{YOUR_USERNAME_HERE}@bitbucket.org/nocreativity/metroplex.git ~/.grunt-init/metroplex
+ git clone https://github.com/menocreativity/Metroplex.git ~/.grunt-init/metroplex
 ```
 
 Installation over! Time to make some magic happen!
